@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 400;
+  font-family: 'Roboto Mono', monospace;;
+  color: white;
+  background: #eaeaea;
+  line-height: 1.7;
+  transition: font-size 0.5s;
+}
+a {
+  color: Orange;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+  transition: all 0.5s;
+
+}
+a:hover {
+  opacity: 0.5;
+}
+iframe {
+    max-width: 100%;
+}
+section {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+h1 {
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+header {
+  position: fixed;
+  width: 100%;
+  height: 3.5em; 
+  background: black;
+  color: #eaeaea;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+  z-index: 1;
+}
+header a {
+    color: #eaeaea;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+header a:hover {
+    color: #eaeaea;
+}
+.branding {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+
+/*banner*/
+.banner {
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+	background-size:cover;
+	background-position: center;
+	
+}
+
+.scrolled {
+	color: #eaeaea;
+	text-decoration: none;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 5em;
+	line-height: 1;
+	display: block;
+	
+}
+
+.scroll:hover {
+	color: #eaeaea;
+}
+
+figure {
+   position: relative;
+   overflow: hidden;
+   margin: 1em auto;
+   max-width: 20em;
+}
+figure img {
+   width: 100%;
+}
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  width:100%;
+  height: 3.5%; 
+  opacity: 1;
+  padding: 1em;
+  font-size: 1.25em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+figure:hover figcaption {
+  opacity: 0.4;
+  height:100%;
+}
+
+.nav-toggle {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  /* delete stuff below if image */
+  background:grey;
+  padding: 1em;
+  cursor: pointer;
+  text-align: center;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  line-height: 1;
+  
+  /* stop deleting here */
+}
+nav {
+  position: fixed;
+  bottom: 5em;
+  right: -100%;
+  text-align: right;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+nav ul {
+  list-style-type: none;
+}
+nav a {
+  background: black;
+  color: white;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  display: inline-block;
+}
+.nav-active nav {
+  right: 1em;
+  opacity: 5;
+}
+figure {
+   position: relative;
+   overflow: hidden;
+}
+figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color:black;
+  color: white;
+  width:100%;
+  height: 3.5%; 
+  opacity: 1;
+  padding: 1.5em;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+figure:hover figcaption {
+  opacity: 0.9;
+  height:100%;
+  overflow-x:hidden;
+  overflow-y: auto; 
+  font-size:1em;
+} 
+
+img{
+  position:center;
+}
+
+iframe{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  min-height:120vh;
+  min-width:120vw;
+  z-index:-1;
+ }
+
+
+
+
+
+@media (min-width: 40em) {
+    .nav-toggle {
+        display: none;
+    }
+    nav {
+        top: 0;
+        right: 1em;
+        opacity: 1;
+        width: auto;
+        max-width: 100%;
+        min-height: 0;
+        height: auto;
+        background: none;
+    }
+    nav li {
+        display: inline-block;
+    }k0
+}
